@@ -1,7 +1,17 @@
 import Image from "next/image";
 import React from "react";
-import { SidebarIcon } from "./SidebarIcon";
+/* React icons */
 import { ImUsers } from "react-icons/im";
+import {
+  MdGroups,
+  MdOutlineOndemandVideo,
+  MdOutlineExpandMore
+} from "react-icons/md";
+import { AiOutlineShop } from "react-icons/ai";
+import { BsStopwatch } from "react-icons/bs"
+
+/* component */
+import { SidebarIcon } from "./SidebarIcon";
 
 
 const Sidebar = () => {
@@ -18,7 +28,12 @@ const Sidebar = () => {
 
         <p className="hidden sm:inline-flex font-medium"> Lina Maria </p>
               </div>
-      <SidebarIcon Icon={ ImUsers } value="Users" />   
+      <SidebarIcon Icon={ ImUsers } value="Friends" />
+      <SidebarIcon Icon={MdGroups} value="Groups" />
+      <SidebarIcon Icon={ AiOutlineShop } value="Marketplace" />
+      <SidebarIcon Icon={ MdOutlineOndemandVideo } value="Watch" />
+      <SidebarIcon Icon={ BsStopwatch } value="Memories" />
+      <SidebarIcon Icon={ MdOutlineExpandMore } value="See More" />
       
     </div>
   );
