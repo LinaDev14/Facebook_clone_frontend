@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import { SessionProvider } from "next-auth/react"
+import { SessionProvider } from "next-auth/client"
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -10,4 +10,4 @@ function MyApp({ Component, pageProps }) {
     )
 }
 
-export default MyApp;
+export default MyApp

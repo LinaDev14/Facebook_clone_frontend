@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import { Header } from '../components/Header'
-import { Login } from '../components/Login';
 import { Sidebar } from '../components/Sidebar'
 
 

@@ -1,14 +1,9 @@
 import Head from 'next/head'
 import { Header } from '../components/Header'
-import { Login } from '../components/Login';
 import { Sidebar } from '../components/Sidebar'
 
 
-export default function Home({ session }) {
-
-  if (!session) return <Login />;
-
-
+export default function Home() {
   return (
     <div>
       <Head>
@@ -29,13 +24,4 @@ export default function Home({ session }) {
   )
 }
 
-export async function getServerSideProps(context){
 
-  const session = await getSession(context);
-
-  return {
-  
-    props: {session}
-  }
-
-}
