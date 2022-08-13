@@ -3,9 +3,7 @@ import React from "react";
 
 /* react icons */
 import { HiOutlineVideoCamera} from "react-icons/hi";
-import { IoMdPhotos } from "react-icons/io";
-import { BsEmojiSmile } from "react-icons/bs";
-
+import {} from "react-icons/io";
 
 
 /* service next/auth */
@@ -35,9 +33,7 @@ const CreatePost = () => {
       </div>
 
       <div className="flex">
-            <div>
-                  <HiOutlineVideoCamera />
-            </div>
+            <div></div>
       
       </div>
     </div>

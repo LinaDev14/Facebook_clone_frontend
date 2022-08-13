@@ -2,11 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 /* react icons */
-import { HiOutlineVideoCamera} from "react-icons/hi";
-import { IoMdPhotos } from "react-icons/io";
-import { BsEmojiSmile } from "react-icons/bs";
-
-
+import {} from
 
 /* service next/auth */
 import { useSession } from "next-auth/react";
@@ -35,9 +31,7 @@ const CreatePost = () => {
       </div>
 
       <div className="flex">
-            <div>
-                  <HiOutlineVideoCamera />
-            </div>
+            <div></div>
       
       </div>
     </div>

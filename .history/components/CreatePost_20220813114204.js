@@ -35,9 +35,7 @@ const CreatePost = () => {
       </div>
 
       <div className="flex">
-            <div>
-                  <HiOutlineVideoCamera />
-            </div>
+            <div></div>
       
       </div>
     </div>

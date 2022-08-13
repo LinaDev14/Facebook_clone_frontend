@@ -3,8 +3,8 @@ import React from "react";
 
 /* react icons */
 import { HiOutlineVideoCamera} from "react-icons/hi";
-import { IoMdPhotos } from "react-icons/io";
-import { BsEmojiSmile } from "react-icons/bs";
+import { IoMdPhotos} from "react-icons/io";
+import {} from "react-icons/bs";
 
 
 
@@ -35,9 +35,7 @@ const CreatePost = () => {
       </div>
 
       <div className="flex">
-            <div>
-                  <HiOutlineVideoCamera />
-            </div>
+            <div></div>
       
       </div>
     </div>
