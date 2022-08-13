@@ -34,23 +34,23 @@ const Header = () => {
       <div className="flex flex-grow justify-center mx-2">
         <div className="flex items-center">
           <div className="flex items-center h-14 px-4 md:px-10 rounded-md md:hover:bg-gray-100 cursor-pointer">
-            <HiOutlineHome className="mx-auto text-blue-500" size={25}/>
+            <HiOutlineHome className="mx-auto text-blue-500" size={21}/>
           </div>
 
           <div className="flex items-center h-14 px-4 md:px-10 rounded-md md:hover:bg-gray-100 cursor-pointer">
-            <RiFlag2Line className="mx-auto text-blue-500" size={25}/>
+            <RiFlag2Line className="mx-auto text-blue-500" size={20}/>
           </div>
 
           <div className="flex items-center h-14 px-4 md:px-10 rounded-md md:hover:bg-gray-100 cursor-pointer">
-            <MdOndemandVideo className="mx-auto text-blue-500" size={25} />
+            <MdOndemandVideo className="mx-auto text-blue-500" size={20} />
           </div>
 
           <div className="flex items-center h-14 px-4 md:px-10 rounded-md md:hover:bg-gray-100 cursor-pointer">
-            <AiOutlineShop className="mx-auto text-blue-500" size={25} />
+            <AiOutlineShop className="mx-auto text-blue-500" size={20} />
           </div>
 
           <div className="flex items-center h-14 px-4 md:px-10 rounded-md md:hover:bg-gray-100 cursor-pointer">
-            <IoGameControllerOutline className="mx-auto text-blue-500" size={25} />
+            <IoGameControllerOutline className="mx-auto text-blue-500" size={21} />
           </div>
         </div>
       </div>
