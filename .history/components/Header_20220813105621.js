@@ -64,13 +64,13 @@ const Header = () => {
 
       <div className=" flex item-center justify-end min-w-fit space-x-2">
         <Image
-          src={session?.user.image}
+          src={session?user.image}
           height={40}
           width={40}
           alt="facebook_logo"
         />
         <p className="hidden xl:inline-flex font-semibold text-sm whitespace-nowrap p-3 max-ws-xs">
-          {session?.user.name.split(" ")[0]}</p>
+          {session?user.name.split(" ")[0]}</p>
 
                     <CgMenuGridO 
                           size={20}

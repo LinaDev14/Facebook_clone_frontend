@@ -15,7 +15,7 @@ import { useSession } from "next-auth/react";
 
 const Header = () => {
 
-  const {data: session} =  useSession();
+  const {data: session} useSession();
 
   return (
     <div className="bg-white flex items-center p-2 shadow-md top-0 sticky z-50 h-16">
@@ -64,13 +64,13 @@ const Header = () => {
 
       <div className=" flex item-center justify-end min-w-fit space-x-2">
         <Image
-          src={session?.user.image}
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/800px-2021_Facebook_icon.svg.png"
           height={40}
           width={40}
           alt="facebook_logo"
         />
         <p className="hidden xl:inline-flex font-semibold text-sm whitespace-nowrap p-3 max-ws-xs">
-          {session?.user.name.split(" ")[0]}</p>
+          Lina Maria</p>
 
                     <CgMenuGridO 
                           size={20}

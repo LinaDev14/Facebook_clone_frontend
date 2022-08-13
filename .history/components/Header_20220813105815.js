@@ -70,7 +70,7 @@ const Header = () => {
           alt="facebook_logo"
         />
         <p className="hidden xl:inline-flex font-semibold text-sm whitespace-nowrap p-3 max-ws-xs">
-          {session?.user.name.split(" ")[0]}</p>
+          {session?user.name.split(" ")[0]}</p>
 
                     <CgMenuGridO 
                           size={20}
