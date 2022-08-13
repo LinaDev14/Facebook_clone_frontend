@@ -38,19 +38,19 @@ const Header = () => {
           </div>
 
           <div className="flex items-center h-14 px-4 md:px-10 rounded-md md:hover:bg-gray-100 cursor-pointer">
-            <RiFlag2Line className="mx-auto size={30}" />
+            <RiFlag2Line className="mx-auto text-blue-500" size={25}/>
           </div>
 
           <div className="flex items-center h-14 px-4 md:px-10 rounded-md md:hover:bg-gray-100 cursor-pointer">
-            <MdOndemandVideo className="mx-auto size={30}" />
+            <MdOndemandVideo className="mx-auto text-blue-500" size={25} />
           </div>
 
           <div className="flex items-center h-14 px-4 md:px-10 rounded-md md:hover:bg-gray-100 cursor-pointer">
-            <AiOutlineShop className="mx-auto size={30}" />
+            <AiOutlineShop className="mx-auto text-blue-500" size={25} />
           </div>
 
           <div className="flex items-center h-14 px-4 md:px-10 rounded-md md:hover:bg-gray-100 cursor-pointer">
-            <IoGameControllerOutline className="mx-auto size={30}" />
+            <IoGameControllerOutline className="mx-auto text-blue-500" size={25} />
           </div>
         </div>
       </div>
@@ -67,19 +67,19 @@ const Header = () => {
           Lina Maria</p>
 
                     <CgMenuGridO 
-                          size={5}
-                          className="hidden lg:inline-flex h-10 w-10 bg-gray-200 text-gray-600 rounded-full p-2 cursor-pointer hover:bg-gray-300" />
+                          size={20}
+                          className="hidden lg:inline-flex h-10 w-10 bg-gray-200 text-gray-600 rounded-full p-2.5 cursor-pointer hover:bg-gray-300" />
                     
                     <AiFillMessage
-                          size={15} className="hidden lg:inline-flex h-10 w-10 bg-gray-200 text-gray-600 rounded-full p-2 cursor-pointer hover:bg-gray-300" />
+                          size={20} className="hidden lg:inline-flex h-10 w-10 bg-gray-200 text-gray-600 rounded-full p-2.5 cursor-pointer hover:bg-gray-300" />
                     
                     <FaBell 
-                          size={15}
-                          className="hidden lg:inline-flex h-10 w-10 bg-gray-200 text-gray-600 rounded-full p-2 cursor-pointer hover:bg-gray-300" />
+                          size={20}
+                          className="hidden lg:inline-flex h-10 w-10 bg-gray-200 text-gray-600 rounded-full p-2.5 cursor-pointer hover:bg-gray-300" />
 
                     <MdExpandMore 
-                    size={15} 
-                    className="hidden lg:inline-flex h-10 w-10 bg-gray-200 text-gray-600 rounded-full p-2 cursor-pointer hover:bg-gray-300"/>
+                    size={20} 
+                    className="hidden lg:inline-flex h-10 w-10 bg-gray-200 text-gray-600 rounded-full p-2.5 cursor-pointer hover:bg-gray-300"/>
                     
       </div>
     </div>
