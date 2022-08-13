@@ -32,7 +32,7 @@ const Sidebar = () => {
           className="rounded-full cursor-pointer"
         />
 
-        <p className="hidden sm:inline-flex font-medium">{session?.user.name}</p>
+        <p className="hidden sm:inline-flex font-medium">{session?.user.name.split(")}</p>
               </div>
       <SidebarIcon Icon={ ImUsers } value="Friends" />
       <SidebarIcon Icon={MdGroups} value="Groups" />
