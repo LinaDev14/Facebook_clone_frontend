@@ -7,7 +7,7 @@ const Login = () => {
   return (
     <div className="flex flex-col items-center mx-auto">
       <Image
-        src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg"
+        src=""
         height={240}
         width={240}
         alt="photo"

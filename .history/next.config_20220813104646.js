@@ -5,7 +5,7 @@ const nextConfig = {
   images: {
     domains: [
       "upload.wikimedia.org", 
-      "pixabay.com",
+      "pixabay.com", 
       "static.xx.fbcdn.net",],
   }
 }

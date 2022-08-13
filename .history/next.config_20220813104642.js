@@ -4,9 +4,7 @@ const nextConfig = {
   swcMinify: true,
   images: {
     domains: [
-      "upload.wikimedia.org", 
-      "pixabay.com",
-      "static.xx.fbcdn.net",],
+      "upload.wikimedia.org", "pixabay.com", "static.xx.fbcdn.net",],
   }
 }
 
