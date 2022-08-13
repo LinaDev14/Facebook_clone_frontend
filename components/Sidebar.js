@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
+import { SidebarIcon } from "./SidebarIcon";
 import { ImUsers } from "react-icons/im";
+
 
 const Sidebar = () => {
   return (
@@ -16,11 +18,8 @@ const Sidebar = () => {
 
         <p className="hidden sm:inline-flex font-medium"> Lina Maria </p>
               </div>
-              
-      <div className="flex items-center space-x-2 py-3 pl-4 hover:bg-gray-200 rounded-l-xl cursor-pointer">
-        <ImUsers className="h-8 w-8 text-blue-500" />
-        <p className="hidden sm:inline-flex font-medium">Users</p>
-      </div>
+      <SidebarIcon Icon={ ImUsers } value="Users" />   
+      
     </div>
   );
 };
