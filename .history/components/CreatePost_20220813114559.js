@@ -2,9 +2,11 @@ import Image from "next/image";
 import React from "react";
 
 /* react icons */
-import { HiOutlineVideoCamera } from "react-icons/hi";
+import { HiOutlineVideoCamera} from "react-icons/hi";
 import { IoMdPhotos } from "react-icons/io";
 import { BsEmojiSmile } from "react-icons/bs";
+
+
 
 /* service next/auth */
 import { useSession } from "next-auth/react";
@@ -33,20 +35,14 @@ const CreatePost = () => {
       </div>
 
       <div className="flex justify-evenly py-2">
-        <div className="flex items-center p-1 space-x-1 flex-grow justify-center hover:bg-gray-100 rounded-md hover:cursor-pointer">
-          <HiOutlineVideoCamera size={20} className="text-red-500" />
-          <p className="font-semibold text-gray-600 ">Live Video</p>
-        </div>
-
-        <div className="flex items-center p-1 space-x-1 flex-grow justify-center hover:bg-gray-100 rounded-md hover:cursor-pointer">
-          <IoMdPhotos size={20} className="text-green-500" />
-          <p className="font-semibold text-gray-600 ">Live Video</p>
-        </div>
-
-        <div className="flex items-center p-1 space-x-1 flex-grow justify-center hover:bg-gray-100 rounded-md hover:cursor-pointer">
-          <BsEmojiSmile size={20} className="text-yellow-500" />
-          <p className="font-semibold text-gray-600 ">Live Video</p>
-        </div>
+            <div className="flex items-center p-1 space-x-1 flex-grow justify-center">
+                  <HiOutlineVideoCamera 
+                  size={20}
+                  className="text-red-500"
+                  <p>
+                  />
+            </div>
+      
       </div>
     </div>
   );

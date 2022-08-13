@@ -39,7 +39,7 @@ const CreatePost = () => {
         </div>
 
         <div className="flex items-center p-1 space-x-1 flex-grow justify-center hover:bg-gray-100 rounded-md hover:cursor-pointer">
-          <IoMdPhotos size={20} className="text-green-500" />
+          <IoMdPhotos size={20} className="text-red-500" />
           <p className="font-semibold text-gray-600 ">Live Video</p>
         </div>
 
