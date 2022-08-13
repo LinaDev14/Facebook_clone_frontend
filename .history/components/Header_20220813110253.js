@@ -11,7 +11,7 @@ import { CgMenuGridO } from 'react-icons/cg'
 import { FaBell } from "react-icons/fa";
 
 /* service next/auth */
-import { useSession, signOut } from "next-auth/react";
+import { useSession } from "next-auth/react";
 
 const Header = () => {
 
@@ -64,7 +64,6 @@ const Header = () => {
 
       <div className=" flex item-center justify-end min-w-fit space-x-2">
         <Image
-          onClick={signOut}
           src={session?.user.image}
           height={40}
           width={40}
