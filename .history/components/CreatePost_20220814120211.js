@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import React, { useRef, useState } from "react";
 
@@ -11,6 +10,7 @@ import { BsEmojiSmile } from "react-icons/bs";
 import { useSession } from "next-auth/react";
 
 const CreatePost = () => {
+
   const { data: session } = useSession();
   const inputRef = useRef(null);
   const hiddenFileInput = useRef(null);
@@ -19,17 +19,18 @@ const CreatePost = () => {
 
   const handleClick = () => {
     hiddenFileInput.current.click();
-  };
+  }
 
   const addImagePost = (e) => {
+
     const reader = new FileReader();
-    if (e.target.files[0]) {
+    if(e.target.file[0]){
       reader.readAsDataURL(e.target.files[0]);
       reader.onload = (e) => {
         setImageToPost(e.target.result);
-      };
+      }
     }
-  };
+  }
 
   return (
     <div className="bg-white rounded-md text-gray-500 p-2">
@@ -41,8 +42,8 @@ const CreatePost = () => {
           alt="facebook_logo"
           className="rounded-full cursor-pointer"
         />
-
         <form className="flex flex-1">
+          
           <input
             className="rounded-full h-12 flex-grow focus:outline-none font-medium bg-gray-100 px-4"
             type="text"
@@ -52,18 +53,7 @@ const CreatePost = () => {
           <button hidden></button>
         </form>
       </div>
-
-      {imageToPost && (
-
-        <div className="flex items-center px-4 py-2 space-x-4 filter hover:brightness-110 transition duration-150 cursor-pointer">
-          <img
-            src={imageToPost}
-            className="h-10 object-contain"
-            alt="imagePost"
-          />
-        </div>
-      )}
-
+      {imageToPost &&( <div></div>)}
       <div className="flex justify-evenly py-2">
         <div className="flex items-center p-1 space-x-1 flex-grow justify-center hover:bg-gray-100 rounded-md hover:cursor-pointer">
           <HiOutlineVideoCamera size={20} className="text-red-500" />
@@ -72,17 +62,15 @@ const CreatePost = () => {
 
         <div
           onClick={handleClick}
-          className="flex items-center p-1 space-x-1 flex-grow justify-center hover:bg-gray-100 rounded-md hover:cursor-pointer"
-        >
+          className="flex items-center p-1 space-x-1 flex-grow justify-center hover:bg-gray-100 rounded-md hover:cursor-pointer">
           <IoMdPhotos size={20} className="text-green-500" />
           <p className="font-semibold text-gray-600 ">Photo/Video</p>
           <input
             onChange={addImagePost}
-            type="file"
-            ref={hiddenFileInput}
+            type="file" 
+            ref={hiddenFileInput} 
             hidden
-            accept="image/*"
-          />
+            accept="image/*" />
         </div>
 
         <div className="flex items-center p-1 space-x-1 flex-grow justify-center hover:bg-gray-100 rounded-md hover:cursor-pointer">

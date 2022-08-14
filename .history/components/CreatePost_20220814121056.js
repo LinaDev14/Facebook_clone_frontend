@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import React, { useRef, useState } from "react";
 
@@ -23,7 +22,7 @@ const CreatePost = () => {
 
   const addImagePost = (e) => {
     const reader = new FileReader();
-    if (e.target.files[0]) {
+    if (e.target.file[0]) {
       reader.readAsDataURL(e.target.files[0]);
       reader.onload = (e) => {
         setImageToPost(e.target.result);
@@ -41,7 +40,7 @@ const CreatePost = () => {
           alt="facebook_logo"
           className="rounded-full cursor-pointer"
         />
-
+        
         <form className="flex flex-1">
           <input
             className="rounded-full h-12 flex-grow focus:outline-none font-medium bg-gray-100 px-4"
@@ -56,10 +55,12 @@ const CreatePost = () => {
       {imageToPost && (
 
         <div className="flex items-center px-4 py-2 space-x-4 filter hover:brightness-110 transition duration-150 cursor-pointer">
-          <img
+          <Image
             src={imageToPost}
             className="h-10 object-contain"
             alt="imagePost"
+            layout="fill"
+            objectFit="cover"
           />
         </div>
       )}

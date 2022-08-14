@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import React, { useRef, useState } from "react";
 
@@ -56,10 +55,12 @@ const CreatePost = () => {
       {imageToPost && (
 
         <div className="flex items-center px-4 py-2 space-x-4 filter hover:brightness-110 transition duration-150 cursor-pointer">
-          <img
+          <Image
             src={imageToPost}
             className="h-10 object-contain"
             alt="imagePost"
+            layout="fill"
+            objectFit="cover"
           />
         </div>
       )}
