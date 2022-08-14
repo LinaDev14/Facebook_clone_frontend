@@ -25,7 +25,7 @@ const RightSidebar = () => {
       <Contacts
         src="https://images.pexels.com/photos/1990241/pexels-photo-1990241.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         name="Laura Rill"
-        status="Offline"
+        status="Online"
       />
 
       <Contacts

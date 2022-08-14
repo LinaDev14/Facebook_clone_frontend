@@ -22,29 +22,25 @@ const RightSidebar = () => {
         </div>
       </div>
 
-      <Contacts
-        src="https://images.pexels.com/photos/1990241/pexels-photo-1990241.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        name="Laura Rill"
-        status="Offline"
+      <Contacts 
+      src="https://images.pexels.com/photos/1990241/pexels-photo-1990241.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+      name="Laura Rill"
+      status="Online"
       />
 
-      <Contacts
-        src="https://images.pexels.com/photos/3357026/pexels-photo-3357026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        name="Camila Jones"
-        status="Online"
+      <Contacts 
+                    src="https://images.pexels.com/photos/3357026/pexels-photo-3357026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    name="Camila Jones"
+                    status="Online"
+              />
+
+      <Contacts 
+      src="https://images.pexels.com/photos/1936769/pexels-photo-1936769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                    name="Sami Rix"
+                    status="Online"
       />
 
-      <Contacts
-        src="https://images.pexels.com/photos/1936769/pexels-photo-1936769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        name="Sami Rix"
-        status="Online"
-      />
-
-      <Contacts
-        src="https://images.pexels.com/photos/8214194/pexels-photo-8214194.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        name="Paula flor"
-        status="Online"
-      />
+      <Contacts src="https://images.pexels.com/photos/8214194/pexels-photo-8214194.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" name="Paula flor"/>
     </div>
   );
 };
