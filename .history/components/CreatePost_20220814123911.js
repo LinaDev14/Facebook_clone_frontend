@@ -61,7 +61,7 @@ const CreatePost = () => {
       inputRef.current.value = "";
       removeImage();
     })
-      .catch((error) => {
+    .catch((error) => {
     console.log(error)
     })
 

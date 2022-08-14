@@ -44,7 +44,7 @@ const CreatePost = () => {
     if (!inputRef.current.value)
       return;
 
-    const formData = new FormData();
+      const formData = new FormData();
 
     formData.append("file", imageToPost);
     formData.append("post", inputRef.current.value);
@@ -53,15 +53,14 @@ const CreatePost = () => {
     formData.append("profilePic", session?.user.image);
 
 
-    axios
-        .post(FACEBOOK_CLONE_ENDPOINT, formData, {
+    axios.post(FACEBOOK_CLONE_ENDPOINT, formData, {
       headers: {Accept : "application/json"},
     })
       .then((response) => {
       inputRef.current.value = "";
       removeImage();
     })
-      .catch((error) => {
+    .catch((error) => {
     console.log(error)
     })
 

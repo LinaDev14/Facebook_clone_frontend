@@ -12,8 +12,6 @@ import { RiDeleteBin6Line } from "react-icons/ri"
 import { useSession } from "next-auth/react";
 
 const CreatePost = () => {
-
-  const FACEBOOK_CLONE_ENDPOINT = "";
   const { data: session } = useSession();
   const inputRef = useRef(null);
   const hiddenFileInput = useRef(null);
@@ -44,28 +42,18 @@ const CreatePost = () => {
     if (!inputRef.current.value)
       return;
 
-    const formData = new FormData();
+      const formData = new FormData();
 
-    formData.append("file", imageToPost);
+      formData.append("file", imageToPost);
     formData.append("post", inputRef.current.value);
-    formData.append("name", session?.user.name);
-    formData.append("email", session?.user.email);
-    formData.append("profilePic", session?.user.image);
+    formData.append("user", session.user.id);
 
+    fetch("/api/posts", {
+      method: "POST",
+      body: formData
+    });
 
-    axios
-        .post(FACEBOOK_CLONE_ENDPOINT, formData, {
-      headers: {Accept : "application/json"},
-    })
-      .then((response) => {
-      inputRef.current.value = "";
-      removeImage();
-    })
-      .catch((error) => {
-    console.log(error)
-    })
-
-
+    inputRef.current.value = "";
     
 
     

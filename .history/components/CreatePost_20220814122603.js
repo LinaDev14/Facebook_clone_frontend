@@ -12,8 +12,6 @@ import { RiDeleteBin6Line } from "react-icons/ri"
 import { useSession } from "next-auth/react";
 
 const CreatePost = () => {
-
-  const FACEBOOK_CLONE_ENDPOINT = "";
   const { data: session } = useSession();
   const inputRef = useRef(null);
   const hiddenFileInput = useRef(null);
@@ -39,38 +37,6 @@ const CreatePost = () => {
     setImageToPost(null);
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!inputRef.current.value)
-      return;
-
-    const formData = new FormData();
-
-    formData.append("file", imageToPost);
-    formData.append("post", inputRef.current.value);
-    formData.append("name", session?.user.name);
-    formData.append("email", session?.user.email);
-    formData.append("profilePic", session?.user.image);
-
-
-    axios
-        .post(FACEBOOK_CLONE_ENDPOINT, formData, {
-      headers: {Accept : "application/json"},
-    })
-      .then((response) => {
-      inputRef.current.value = "";
-      removeImage();
-    })
-      .catch((error) => {
-    console.log(error)
-    })
-
-
-    
-
-    
-  }
-
   return (
     <div className="bg-white rounded-md text-gray-500 p-2">
       <div className="flex p-4 space-x-2 items-center">
@@ -89,7 +55,7 @@ const CreatePost = () => {
             ref={inputRef}
             placeholder={`What's on your mind, ${session?.user.name}`}
           />
-          <button hidden onClick={handleSubmit}></button>
+          <button hidden onClick={han}></button>
         </form>
       </div>
 
