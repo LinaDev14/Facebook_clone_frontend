@@ -4,7 +4,7 @@ import React from "react";
 /* React icons */
 import { FiThumbsUp } from "react-icons/fi";
 import { FaRegCommentAlt } from "react-icons/fa";
-import { RiShareForwardLine} from "react-icons/ri";
+import { RiShareForwardFill } from "react-icons/ri";
 
 const Post = () => {
   return (

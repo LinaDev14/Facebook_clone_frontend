@@ -4,7 +4,7 @@ import React from "react";
 /* React icons */
 import { FiThumbsUp } from "react-icons/fi";
 import { FaRegCommentAlt } from "react-icons/fa";
-import { RiShareForwardLine} from "react-icons/ri";
+import { RiShareForwardFill } from "react-icons/ri";
 
 const Post = () => {
   return (
@@ -37,20 +37,9 @@ const Post = () => {
         />
       </div>
       {/* Footer */}
-              <div className="flex items-center justify-center bg-white p-2">
-                    
-        <div className="flex items-center space-x-1 hover:bg-gray-100 flex-grow justify-center p-2 rounded-xl cursor-pointer">
+      <div className="flex items-center justify-center bg-w">
+        <div className="flex items-center space-x-1">
           <FiThumbsUp className="h-4" />
-          <p className="text-xs sm:text-base">Like</p>
-        </div>
-
-        <div className="flex items-center space-x-1 hover:bg-gray-100 flex-grow justify-center p-2 rounded-xl cursor-pointer">
-          <FaRegCommentAlt className="h-4" />
-          <p className="text-xs sm:text-base">Like</p>
-        </div>
-
-        <div className="flex items-center space-x-1 hover:bg-gray-100 flex-grow justify-center p-2 rounded-xl cursor-pointer">
-          <RiShareForwardLine className="h-4" />
           <p className="text-xs sm:text-base">Like</p>
         </div>
       </div>

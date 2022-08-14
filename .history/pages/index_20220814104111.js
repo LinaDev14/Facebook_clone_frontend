@@ -4,7 +4,6 @@ import { Header } from '../components/Header'
 import { Login } from '../components/Login';
 import { Sidebar } from '../components/Sidebar'
 import { Feed } from '../components/Feed';
-import { RightSidebar } from '../components/RightSidebar';
 
 
 export default function Home({ session }) {
@@ -26,7 +25,7 @@ export default function Home({ session }) {
         {/* Feed (Create Post and Posts) */}
         <Feed />
         {/* Right sidebar*/}
-        <RightSidebar />
+        <Rig
 
 
       </main>
