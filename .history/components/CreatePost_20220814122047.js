@@ -33,8 +33,7 @@ const CreatePost = () => {
   };
 
   const removeImage = () => {
-    
-    setImageToPost(null);
+    setIma
   }
 
   return (

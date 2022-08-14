@@ -32,11 +32,6 @@ const CreatePost = () => {
     }
   };
 
-  const removeImage = () => {
-    
-    setImageToPost(null);
-  }
-
   return (
     <div className="bg-white rounded-md text-gray-500 p-2">
       <div className="flex p-4 space-x-2 items-center">
@@ -62,7 +57,7 @@ const CreatePost = () => {
       {imageToPost && (
 
         <div
-        onClick={removeImage} 
+        onClick={} 
         className="flex items-center px-4 py-2 space-x-4 filter hover:brightness-110 transition duration-150 cursor-pointer">
           <img
             src={imageToPost}

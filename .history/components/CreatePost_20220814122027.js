@@ -32,10 +32,7 @@ const CreatePost = () => {
     }
   };
 
-  const removeImage = () => {
-    
-    setImageToPost(null);
-  }
+  const removeImage
 
   return (
     <div className="bg-white rounded-md text-gray-500 p-2">

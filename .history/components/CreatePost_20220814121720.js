@@ -6,7 +6,7 @@ import React, { useRef, useState } from "react";
 import { HiOutlineVideoCamera } from "react-icons/hi";
 import { IoMdPhotos } from "react-icons/io";
 import { BsEmojiSmile } from "react-icons/bs";
-import { RiDeleteBin6Line } from "react-icons/ri"
+import {} from "react-icons/ri"
 
 /* service next/auth */
 import { useSession } from "next-auth/react";
@@ -32,11 +32,6 @@ const CreatePost = () => {
     }
   };
 
-  const removeImage = () => {
-    
-    setImageToPost(null);
-  }
-
   return (
     <div className="bg-white rounded-md text-gray-500 p-2">
       <div className="flex p-4 space-x-2 items-center">
@@ -61,15 +56,12 @@ const CreatePost = () => {
 
       {imageToPost && (
 
-        <div
-        onClick={removeImage} 
-        className="flex items-center px-4 py-2 space-x-4 filter hover:brightness-110 transition duration-150 cursor-pointer">
+        <div className="flex items-center px-4 py-2 space-x-4 filter hover:brightness-110 transition duration-150 cursor-pointer">
           <img
             src={imageToPost}
             className="h-10 object-contain"
             alt="imagePost"
           />
-          <RiDeleteBin6Line className="h-8 hover:text-red-500"/>
         </div>
       )}
 
