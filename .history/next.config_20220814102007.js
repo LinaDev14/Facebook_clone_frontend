@@ -8,7 +8,7 @@ const nextConfig = {
       "pixabay.com",
       "static.xx.fbcdn.net",
       "platform-lookaside.fbsbx.com",
-      "images.pexels.com"
+      images.pexels.com
     ],
   }
 }

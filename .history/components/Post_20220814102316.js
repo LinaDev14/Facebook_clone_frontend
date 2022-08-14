@@ -26,7 +26,6 @@ const Post = () => {
               src="https://images.pexels.com/photos/12977998/pexels-photo-12977998.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               layout="fill"
               alt="fb image"
-              objectFit="cover"
             />
               
               </div>

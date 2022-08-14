@@ -23,10 +23,11 @@ const Post = () => {
               {/* If any Image */}
               <div className="relative h-60 md:h-96 bg-white">
               <Image
-              src="https://images.pexels.com/photos/12977998/pexels-photo-12977998.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              layout="fill"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/800px-2021_Facebook_icon.svg.png"
+              height={40}
+              width={40}
+              className="rounded-full w-10 h-10"
               alt="fb image"
-              objectFit="cover"
             />
               
               </div>

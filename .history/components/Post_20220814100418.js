@@ -15,21 +15,11 @@ const Post = () => {
           />
           <div>
             <p className="font-medium">Lina María</p>
-            <p className="text-xs text-gray-500">{new Date().toLocaleString()}</p>
+            <p className="text-xs bg-gray-500">{new Date().toLocaleString()}</p>
           </div>
         </div>
         <p className="py-4">Lorem ipsum</p>
-              </div>
-              {/* If any Image */}
-              <div className="relative h-60 md:h-96 bg-white">
-              <Image
-              src="https://images.pexels.com/photos/12977998/pexels-photo-12977998.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              layout="fill"
-              alt="fb image"
-              objectFit="cover"
-            />
-              
-              </div>
+      </div>
     </div>
   );
 };
