@@ -5,7 +5,7 @@ import { CgMoreAlt } from "react-icons/cg";
 
 const RightSidebar = () => {
   return (
-    <div className="hidden md:inline-flex flex-col pt-4 max-w-xl md:min-w-[200px] lg:min-x-[250px]">
+    <div className="hidden md:inline-flex flex-col pt-4 max-w-xl md:min-w-[200px] lg:min-x-">
       <div className="flex items-center text-gray-500">
         <p className="flex text-lg font-semibold flex-grow"> Contacts</p>
         <div className="flex space-x-1 px-2">
