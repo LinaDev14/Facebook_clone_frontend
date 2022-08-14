@@ -15,10 +15,6 @@ const CreatePost = () => {
   const inputRef = useRef(null);
   const hiddenFileInput = useRef(null);
 
-  const handleClick = () => {
-    hiddenFileInput.current.click();
-  }
-
   return (
     <div className="bg-white rounded-md text-gray-500 p-2">
       <div className="flex p-4 space-x-2 items-center">
@@ -47,12 +43,9 @@ const CreatePost = () => {
           <p className="font-semibold text-gray-600 ">Live Video</p>
         </div>
 
-        <div
-          onClick={handleClick}
-          className="flex items-center p-1 space-x-1 flex-grow justify-center hover:bg-gray-100 rounded-md hover:cursor-pointer">
+        <div className="flex items-center p-1 space-x-1 flex-grow justify-center hover:bg-gray-100 rounded-md hover:cursor-pointer">
           <IoMdPhotos size={20} className="text-green-500" />
           <p className="font-semibold text-gray-600 ">Photo/Video</p>
-          <input type="file" ref={hiddenFileInput}  hidden accept="image/*"/>
         </div>
 
         <div className="flex items-center p-1 space-x-1 flex-grow justify-center hover:bg-gray-100 rounded-md hover:cursor-pointer">

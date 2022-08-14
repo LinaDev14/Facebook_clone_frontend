@@ -12,12 +12,7 @@ import { useSession } from "next-auth/react";
 const CreatePost = () => {
 
   const { data: session } = useSession();
-  const inputRef = useRef(null);
-  const hiddenFileInput = useRef(null);
-
-  const handleClick = () => {
-    hiddenFileInput.current.click();
-  }
+  const inputRef = useRef()
 
   return (
     <div className="bg-white rounded-md text-gray-500 p-2">
@@ -30,11 +25,9 @@ const CreatePost = () => {
           className="rounded-full cursor-pointer"
         />
         <form className="flex flex-1">
-          
           <input
             className="rounded-full h-12 flex-grow focus:outline-none font-medium bg-gray-100 px-4"
             type="text"
-            ref={inputRef}
             placeholder={`What's on your mind, ${session?.user.name}`}
           />
           <button hidden></button>
@@ -47,12 +40,9 @@ const CreatePost = () => {
           <p className="font-semibold text-gray-600 ">Live Video</p>
         </div>
 
-        <div
-          onClick={handleClick}
-          className="flex items-center p-1 space-x-1 flex-grow justify-center hover:bg-gray-100 rounded-md hover:cursor-pointer">
+        <div className="flex items-center p-1 space-x-1 flex-grow justify-center hover:bg-gray-100 rounded-md hover:cursor-pointer">
           <IoMdPhotos size={20} className="text-green-500" />
           <p className="font-semibold text-gray-600 ">Photo/Video</p>
-          <input type="file" ref={hiddenFileInput}  hidden accept="image/*"/>
         </div>
 
         <div className="flex items-center p-1 space-x-1 flex-grow justify-center hover:bg-gray-100 rounded-md hover:cursor-pointer">
