@@ -2,7 +2,6 @@ import React from "react";
 import { RiVideoAddFill } from "react-icons/ri";
 import { BiSearch } from "react-icons/bi";
 import { CgMoreAlt } from "react-icons/cg";
-import { Contacts } from "./Contacts";
 
 const RightSidebar = () => {
   return (
@@ -17,12 +16,10 @@ const RightSidebar = () => {
             <BiSearch />
         </div>
         <div className="rounded-full p-2 hover:bg-gray-200 cursor-pointer">
-            <CgMoreAlt />
+            <RiVideoAddFill />
         </div>
       </div>
       </div>
-
-              <Contacts />
     </div>
   );
 };

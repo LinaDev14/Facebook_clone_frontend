@@ -2,7 +2,6 @@ import React from "react";
 import { RiVideoAddFill } from "react-icons/ri";
 import { BiSearch } from "react-icons/bi";
 import { CgMoreAlt } from "react-icons/cg";
-import { Contacts } from "./Contacts";
 
 const RightSidebar = () => {
   return (
@@ -22,7 +21,7 @@ const RightSidebar = () => {
       </div>
       </div>
 
-              <Contacts />
+              <C
     </div>
   );
 };
