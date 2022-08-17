@@ -10,6 +10,8 @@ export const postSlice = createSlice({
       reducers: {
             addPost: (state, action) => {},
             addAllPost: (state, action) => {},
+
+      
       },
 });
 

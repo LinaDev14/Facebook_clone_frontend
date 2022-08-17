@@ -10,9 +10,11 @@ export const postSlice = createSlice({
       reducers: {
             addPost: (state, action) => {},
             addAllPost: (state, action) => {},
+
+      
       },
 });
 
 export const { addPost, addAllPost } = postSlice.actions;
-export const selectPost = (state) => state.post.value;
+export const (state) =
 export default postSlice.reducer;
