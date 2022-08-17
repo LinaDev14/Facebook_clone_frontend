@@ -11,7 +11,6 @@ import { RiDeleteBin6Line } from "react-icons/ri"
 /* service next/auth */
 import { useSession } from "next-auth/react";
 import { useDispatch } from "react-redux";
-import { addPost } from "../public/src/features/postSlice";
 
 const CreatePost = () => {
 
@@ -61,7 +60,6 @@ const CreatePost = () => {
     })
       .then((response) => {
       inputRef.current.value = "";
-      dispatch(addPost(response.data))
       removeImage();
     })
       .catch((error) => {

@@ -61,7 +61,7 @@ const CreatePost = () => {
     })
       .then((response) => {
       inputRef.current.value = "";
-      dispatch(addPost(response.data))
+      dispatch(addPost())
       removeImage();
     })
       .catch((error) => {
